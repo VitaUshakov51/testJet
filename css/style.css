@@ -1,0 +1,101 @@
+body {
+    font-family: 'TT Travels Next Trial Variable', sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    border-radius: 100px;
+    background-color: #1C75A4;
+    padding: 19px 32px;
+    font-weight: 704;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+a.button {
+    display: inline-block;
+}
+
+.hero {
+    position: relative;
+}
+.gif {
+    position: absolute;
+    z-index: -1;
+    width: 54%; /* Ширина контейнера 100% экрана */
+    height: 799px;
+    overflow: hidden;
+    border-start-end-radius: 5%;
+    border-end-end-radius: 5%;
+}
+
+.gif img {
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина изображения 100% ширины контейнера */
+    height: 100%; /* Высота изображения 100% высоты контейнера */
+    object-fit: cover;
+}
+
+/*header*/
+
+.header {
+    padding: 40px 0 40px 0;
+}
+
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header__nav-link {
+    font-weight: 300;
+    font-size: 13px;
+    color: #838B8F;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/*jetskin*/
+
+.jetskin {
+    margin-top: 86px;
+}
+
+.jetskin__inner {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.jetskin__content {
+    max-width: 598px;
+}
+
+.jetskin__title {
+    font-weight: 704;
+    font-size: 44px;
+    line-height: 130%;
+    color: #1F2123;
+    margin-bottom: 232px;
+}
+
+.jetskin__title span {
+    color: #1C75A4;
+}
