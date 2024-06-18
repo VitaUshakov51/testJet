@@ -28,7 +28,7 @@ a.button {
 .gif {
     position: absolute;
     z-index: -1;
-    width: 54%; /* Ширина контейнера 100% экрана */
+    width: 50%; /* Ширина контейнера 100% экрана */
     height: 799px;
     overflow: hidden;
     border-start-end-radius: 5%;
@@ -61,7 +61,7 @@ a.button {
 .header__nav-list {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .header__nav-link {
