@@ -1,5 +1,6 @@
 body {
     font-family: 'TT Travels Next Trial Variable', sans-serif;
+    cursor: default;
 }
 
 .container {
@@ -16,6 +17,11 @@ body {
     color: #fff;
 }
 
+.title {
+    font-weight: 807;
+    font-size: 36px;
+    color: #1F2123;
+}
 
 a.button {
     display: inline-block;
@@ -97,4 +103,101 @@ a.button {
 
 .jetskin__title span {
     color: #1C75A4;
+}
+
+/*about*/
+.about {
+    margin-top: 120px;
+}
+
+.about__title {
+    margin-bottom: 60px;
+}
+
+.about__items {
+    display: flex;
+    align-items: center;justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.about__item {
+    display: flex;
+    align-items: center;
+    max-width: 388px;
+}
+
+.about__item-icon {
+    margin-right: 12px;
+}
+
+.about__item-text {
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 130%;
+    color: #484D50;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about__content-text {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #484D50;
+    max-width: 388px;
+}
+
+.about__content-text span {
+    color: #1C75A4;
+}
+
+.about__content-text::after {
+    position: absolute;
+    top: 22%;
+    right: 0;
+    display: block;
+    content: '';
+    width: 115px;
+    height: 80px;
+    background-image: url("../images/arrowtext.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about__content-frame {
+    cursor: pointer;
+    transition: all .1s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 808px;
+}
+
+.about__content-frame:hover {
+    background-color: rgba(31, 33, 35, 0.37);
+}
+
+.about__content-frame:hover .about__content-frame-icon {
+    transform: scale(1.25) rotate(360deg);
+}
+
+
+.about__content-frame-icon {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    transition: all 1s;
+}
+
+.about__content-frame-img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
 }
