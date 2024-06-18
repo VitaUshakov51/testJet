@@ -28,7 +28,7 @@ a.button {
     position: absolute;
     z-index: -1;
     width: 50%; /* Ширина контейнера 100% экрана */
-    height: 799px;
+    height: 739px;
     overflow: hidden;
     border-start-end-radius: 5%;
     border-end-end-radius: 5%;
