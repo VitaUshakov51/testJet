@@ -12,6 +12,18 @@ body {
     margin: 0 auto;
 }
 
+.wrapper {
+    background-color: #D5E6EF;
+}
+
+
+
+.wrapper .container {
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    padding: 120px 105px;
+}
+
 .button {
     border-radius: 100px;
     background-color: #1C75A4;
@@ -19,11 +31,23 @@ body {
     font-weight: 704;
     font-size: 14px;
     color: #fff;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: #398FBB;
 }
 
 .title {
     font-weight: 807;
     font-size: 36px;
+    color: #1F2123;
+}
+
+.mini-title {
+    font-weight: 807;
+    font-size: 36px;
+    line-height: 130%;
     color: #1F2123;
 }
 
@@ -78,6 +102,13 @@ a.button {
     color: #FFFFFF;
     padding: 8px 16px;
     cursor: pointer;
+    transition: all .3s;
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+
+.header__nav-link:hover {
+    border: 1px solid #FFFFFF;
 }
 
 .hero__title {
@@ -134,6 +165,11 @@ a.button {
 /*about*/
 .about {
     margin-top: 120px;
+    margin-bottom: -170px;
+}
+
+.about__wrapper {
+    padding-top: 290px;
 }
 
 .about__title {
@@ -204,14 +240,21 @@ a.button {
     overflow: hidden;
     border-radius: 20px;
     max-width: 808px;
+    width: 808px;
+    height: 456px;
+    background-image: url("../images/garage.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
 }
 
 .about__content-frame:hover {
-    background-color: rgba(31, 33, 35, 0.37);
+    /*background-color: rgba(31, 33, 35, 0.6);*/
+    box-shadow: inset 0px 0px 20px 4px black;
 }
 
 .about__content-frame:hover .about__content-frame-icon {
-    transform: scale(1.25) rotate(360deg);
+    transform: scale(1.25);
 }
 
 
@@ -222,9 +265,163 @@ a.button {
     transition: all 1s;
 }
 
-.about__content-frame-img {
-    position: relative;
-    z-index: -1;
+/*equipment*/
+
+.equipment__title {
+    margin-bottom: 60px;
+}
+
+.equipment__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment__image {
+    max-width: 598px;
+}
+
+.equipment__image img {
     width: 100%;
-    object-fit: cover;
+}
+
+.equipment__content {
+    overflow: hidden;
+    border: 1px solid #D5E6EF;
+    border-radius: 20px;
+}
+
+.equipment__content-title {
+    padding: 40px 40px 0 40px;
+    font-weight: 807;
+    font-size: 20px;
+    color: #1F2123;
+}
+
+.equipment__content-items {
+    padding: 4px 40px 20px 40px;
+}
+
+
+.equipment__content-item {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 350;
+    font-size: 14px;
+    color: #484D50;
+    border-bottom: 1px solid #DAE2E7;
+}
+
+.equipment__content-item:last-child {
+ border: none;
+}
+
+.equipment__content-bottom {
+    background-color: #D5E6EF;
+    padding: 28px 40px;
+}
+
+.equipment__content-bottom-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-weight: 350;
+    font-size: 14px;
+    color: #484D50;
+}
+
+/*additions*/
+
+.additions {
+    margin-top: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #D5E6EF;
+}
+
+.additions__title {
+    margin-bottom: 28px;
+}
+
+.additions__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.additions__item {
+    max-width: 210px;
+}
+
+.additions__item-text {
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 140%;
+    color: #484D50;
+    margin-top: 12px;
+}
+
+/*advantages*/
+
+.advantages {
+    margin-top: 120px;
+}
+
+.advantages__title {
+    max-width: 595px;
+    margin-bottom: 60px;
+}
+
+.advantages__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.advantages__item {
+    max-width: 318px;
+    padding: 20px;
+    border: 1px solid #DAE2E7;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.advantages__image {
+    position: relative;
+    width: 278px;
+    height: 152px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.advantages__play-icon {
+    transition: all .3s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.advantages__item:hover .advantages__play-icon {
+    transform: scale(1.25);
+}
+
+.advantages__name {
+    font-weight: 807;
+    font-size: 20px;
+    color: #1F2123;
+    margin-bottom: 12px;
+}
+
+.advantages__text {
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 140%;
+    color: #484D50;
+}
+
+.advantages__button {
+    width: 318px;
 }
