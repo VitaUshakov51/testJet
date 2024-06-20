@@ -117,7 +117,7 @@ a.button {
     line-height: 130%;
     color: #FFF;
     max-width: 620px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .hero__title span {
@@ -170,6 +170,7 @@ a.button {
 
 .about__wrapper {
     padding-top: 290px;
+    padding-bottom: 120px;
 }
 
 .about__title {
@@ -424,4 +425,117 @@ a.button {
 
 .advantages__button {
     width: 318px;
+}
+
+/*technic*/
+.technic {
+    margin-top: 120px;
+}
+
+.technic__title {
+    margin-bottom: 44px;
+}
+
+.technic__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technic__items {
+    max-width: 493px;
+}
+
+.technic__item {
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid #DAE2E7;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.technic__item:last-child {
+    border: none;
+}
+
+.technic__item-name {
+    font-weight: 807;
+    font-size: 16px;
+    color: #1F2123;
+    line-height: 130%;
+    max-width: 198px;
+}
+
+
+.technic__item-desc {
+    width: 255px;
+    max-width: 255px;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 140%;
+    color: #484D50;
+    text-align: start;
+}
+
+.technic__item-name-link {
+    font-weight: 807;
+    text-decoration: underline;
+    color: #1C75A4;
+}
+
+.technic__image {
+    max-width: 493px;
+}
+
+.technic__image img {
+    width: 100%;
+}
+
+
+.technic__button {
+    margin-top: 60px;
+    padding-left:80px ;
+    padding-right:80px ;
+}
+
+/*guarantee*/
+
+.guarantee {
+    padding: 120px 0;
+}
+
+.guarantee__title {
+    margin-bottom: 60px;
+}
+
+.guarantee__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.guarantee__image {
+    max-width: 284px;
+}
+
+.guarantee__image img{
+}
+
+.guarantee__items {
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.guarantee__item {
+    max-width: 330px;
+}
+
+.guarantee__item-text {
+    margin-top: 12px;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 130%;
+    color: #484D50;
 }
