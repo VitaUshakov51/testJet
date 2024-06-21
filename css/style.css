@@ -609,6 +609,11 @@ a.button {
 
 .questions__item.active {
     height: 100%;
+    border-color: #1C75A4;
+}
+
+.questions__item.active .questions__item-head {
+    color: #1C75A4;
 }
 
 .questions__item.active .questions__item-head-arrow {
@@ -644,6 +649,10 @@ a.button {
 }
 
 .questions__item:hover .questions__item-head-arrow svg path {
+    stroke: #1C75A4;
+}
+
+.questions__item.active .questions__item-head-arrow svg path {
     stroke: #1C75A4;
 }
 
