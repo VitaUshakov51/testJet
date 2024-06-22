@@ -1,34 +1,7 @@
-/*@font-face {*/
-/*    font-family: 'TT Travels Next';*/
-/*    src: url('../fonts/TT Travels Next Trial Bold.ttf') format('ttf');*/
-/*    font-weight: 700*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'TT Travels Next';*/
-/*    src: url('../fonts/TT Travels Next Trial ExtraBold.ttf') format('ttf');*/
-/*    font-weight: 800;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'TT Travels Next';*/
-/*    src: url('../fonts/TT Travels Next Trial Light.ttf') format('ttf');*/
-/*    font-weight: 300;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'TT Travels Next';*/
-/*    src: url('../fonts/TT Travels Next Trial Medium.ttf') format('ttf');*/
-/*    font-weight: 500;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'TT Travels Next';*/
-/*    src: url('../fonts/TT Travels Next Trial Regular.ttf') format('ttf');*/
-/*    font-weight: 400;*/
-/*}*/
-
 @font-face {
     font-family: 'TT Travels Next Trial Variable';
-    src: url('../fonts/TT Travels Next Trial Variable.ttf') format('ttf');
+    src: url('../fonts/TT Travels Next Trial Variable.ttf') format('ttf'),
+    url('../fonts/TT Travels Next Trial Variable.eot') format('eot'),
+    url('../fonts/TT Travels Next Trial Variable.woff') format('woff'),
+    url('../fonts/TT Travels Next Trial Variable.woff2') format('woff2');
 }
