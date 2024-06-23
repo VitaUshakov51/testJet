@@ -5,3 +5,13 @@
     url('../fonts/TT Travels Next Trial Variable.woff') format('woff'),
     url('../fonts/TT Travels Next Trial Variable.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'TT Travels Next Trial Bold';
+    src: url('../fonts/TT Travels Next Trial Bold.ttf') format('ttf'),
+    url('../fonts/TT Travels Next Trial Bold.eot') format('eot'),
+    url('../fonts/TT Travels Next Trial Bold.woff') format('woff'),
+    url('../fonts/TT Travels Next Trial Bold.woff2') format('woff2');
+}
+
+

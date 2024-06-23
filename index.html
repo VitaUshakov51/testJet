@@ -12,21 +12,29 @@
 </head>
 <body>
 
+<div id="overlay" class="body-overlay"></div>
+<div class="burger" id="burger">
+    <div class="burger__inner">
+        <div class="burger__element burger__element-one"></div>
+        <div class="burger__element burger__element-two"></div>
+        <div class="burger__element burger__element-three"></div>
+    </div>
+</div>
 <section class="hero">
     <div class="overlay"></div>
     <header class="header">
         <div class="container">
             <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
-            <nav class="header__nav">
+            <nav class="header__nav" id="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Комплектация</a>
+                        <a href="#equipment" class="header__nav-link">Комплектация</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Характеристики</a>
+                        <a href="#technic" class="header__nav-link">Характеристики</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Доставка и оплата</a>
+                        <a href="#buy" class="header__nav-link">Доставка и оплата</a>
                     </li>
                 </ul>
             </nav>
@@ -39,9 +47,9 @@
             <a href="#about" class="hero__link button">Я не верю, покажите</a>
         </div>
     </div>
-    <video loop="" muted="" autoplay="" class="hero__video">
+    <video loop="" muted=""  autoplay="" class="hero__video">
         <source class="mobile-video" media="(max-width:500px)" src="video/mobile.mp4">
-        <source class="video" src="video/IMG_1155.MP4" type="video/webm">
+        <source class="video"  src="video/IMG_1155.MP4" type="video/webm">
     </video>
 </section>
 <section class="about" id="about">
@@ -149,7 +157,7 @@
 </section>
 <div class="wrapper about__wrapper">
     <div class="container">
-        <section class="equipment">
+        <section id="equipment" class="equipment">
             <div class="equipment__title mini-title">Комплектация</div>
             <div class="equipment__inner">
                 <div class="equipment__image">
@@ -282,7 +290,7 @@
             </div>
             <a href="#" class="advantages__button button">Хочу себе такой!</a>
         </section>
-        <section class="technic">
+        <section id="technic" class="technic">
             <div class="technic__title mini-title">Технические характеристики</div>
             <div class="technic__inner">
                 <div class="technic__items">
@@ -550,7 +558,7 @@
     </div>
 </div>
 
-<section class="buy">
+<section id="buy" class="buy">
     <div class="container">
         <div class="buy__title mini-title">Как купить себе аквабайк?</div>
         <div class="buy__inner">
