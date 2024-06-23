@@ -44,7 +44,7 @@ body {
 
 
 .wrapper .container {
-    border-radius: 100px;
+    border-radius: 40px;
     background-color: #FFFFFF;
     padding: 120px 105px;
 }
@@ -351,6 +351,7 @@ a.button {
 }
 
 .equipment__inner {
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -440,11 +441,11 @@ a.button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 32px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+
 }
 
 .additions__item {
@@ -1195,6 +1196,13 @@ video {
 
 }
 
+
+@media (max-width: 1199px){
+    .equipment__inner {
+        gap: 23px ;
+    }
+}
+
 @media (max-width: 1024px) {
     .header .container {
         padding: 40px 40px;
@@ -1203,11 +1211,34 @@ video {
     .container {
         padding: 0 40px;
     }
+
+    .additions__inner {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .additions__item {
+        max-width: 254px;
+    }
 }
 
 @media (max-width: 900px) {
     .about__item {
         margin-right: 10px;
+    }
+
+    .wrapper .container {
+        padding: 120px 40px;
+    }
+
+
+    .equipment__inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .equipment__content {
+        width: 100%;
     }
 }
 
@@ -1383,6 +1414,15 @@ video {
 
 }
 
+@media (max-width: 706px) {
+    .additions__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: inherit;
+    }
+}
+
 @media (max-width: 635px) {
     .about {
         margin-top: 80px;
@@ -1412,6 +1452,12 @@ video {
         width: 115px;
         height: 80px;
     }
+
+    .additions {
+        padding: 20px;
+    }
+
+}
 
 
     @media (max-width: 600px) {
@@ -1463,6 +1509,18 @@ video {
 
         .about__content-frame {
             height: 196px;
+        }
+
+        .wrapper .container {
+            padding: 80px 15px;
+        }
+
+        .equipment__title {
+            margin-bottom: 40px;
+        }
+
+        .additions {
+            margin-top: 40px;
         }
     }
 }
