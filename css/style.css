@@ -1,7 +1,17 @@
-html {
+
+html{
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+body
+{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'TT Travels Next Trial Variable', sans-serif;
@@ -683,6 +693,8 @@ a.button {
 }
 
 .questions__item {
+    flex: 0 0 47%;
+    width: 100%;
     border: 1px solid #DAE2E7;
     border-radius: 12px;
     padding: 20px;
@@ -692,6 +704,7 @@ a.button {
     transition: all 1s;
     cursor: pointer;
     height: 80%;
+    min-height: 61px;
 }
 
 
@@ -824,8 +837,19 @@ a.button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+
+}
+
+.buy__info-mobile {
+    display: block;
+}
+
+.buy__right-tablet {
+    display: none;
+}
+
+.buy__inner-wrap {
+    display: contents;
 }
 
 .buy__left {
@@ -929,6 +953,13 @@ a.button {
     border-radius: 20px;
 }
 
+.buy__right-tablet {
+    max-width: 285px;
+    padding: 44px 32px;
+    border: 1px solid #DAE2E7;
+    border-radius: 20px;
+}
+
 .buy__right-title {
     font-weight: 807;
     font-size: 20px;
@@ -965,6 +996,7 @@ a.button {
 }
 
 .buy__right-socials {
+    gap: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -992,8 +1024,15 @@ a.button {
     display: -ms-flexbox;
     display: flex;
     gap: 32px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+
+}
+
+.send__image {
+    max-width: 598px;
+}
+
+.send__image img {
+    width: 100%;
 }
 
 .send__action {
@@ -1196,10 +1235,72 @@ video {
 
 }
 
+@media (max-width: 1210px ) {
+    .questions__item {
+        flex: 0 0 47%;
+    }
 
-@media (max-width: 1199px){
+    .buy__inner {
+        justify-content: inherit;
+        gap: 20px;
+    }
+
+    .buy__right {
+        display: none;
+    }
+
+    .buy__right-tablet {
+        display: flex;
+        width: 100%;
+        max-width: inherit;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .buy__right-title {
+        margin-bottom: 0;
+        max-width: 243px;
+    }
+
+    .buy__right-contact {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 1199px) {
     .equipment__inner {
-        gap: 23px ;
+        gap: 23px;
+    }
+
+    .advantages__item {
+        max-width: 247px;
+        padding: 20px;
+    }
+
+    .advantages__image {
+        width: inherit;
+    }
+
+    .technic__items {
+        max-width: 420px;
+    }
+
+    .guarantee__items {
+        gap: 20px;
+    }
+
+    .guarantee__item {
+        max-width: 270px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .footer__menu-inner {
+        flex-direction: column;
+        gap: 0;
     }
 }
 
@@ -1219,6 +1320,133 @@ video {
 
     .additions__item {
         max-width: 254px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .technic__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .technic__image {
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .technic__items {
+        max-width: inherit;
+        width: 100%;
+    }
+
+    .technic__item-name {
+        width: 198px;
+    }
+
+
+}
+
+@media (max-width: 1002px) {
+    .questions__inner {
+        flex-direction: column;
+    }
+
+    .questions__item {
+        max-width: inherit;
+    }
+
+    .questions__item-head-title {
+        max-width: inherit;
+    }
+
+    .questions__item-body {
+        width: 90%;
+        max-width: inherit;
+    }
+
+    .questions__button {
+        margin-top: 40px;
+        width: 100%;
+        padding: 18px 79px;
+    }
+}
+
+@media (max-width: 975px) {
+    .advantages__inner {
+        justify-content: inherit;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .advantages__item {
+        max-width: inherit;
+        display: flex;
+        gap: 20px;
+    }
+
+
+    .advantages__image {
+        background-position: center;
+        width: 274px;
+        height: 135px;
+        margin-bottom: 0;
+    }
+
+    .advantages__item-content {
+        max-width: 274px;
+    }
+
+    .advantages__button {
+        width: 100%;
+    }
+
+    .guarantee__inner {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .buy__info {
+        display: none;
+    }
+
+    .buy__info-mobile {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+
+    .buy__sale {
+        flex-direction: column;
+    }
+
+    .buy__sale-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+        max-width: inherit;
+    }
+
+    .buy__right-tablet {
+        flex-wrap: wrap;
+        justify-content: inherit;
+    }
+
+    .buy__right-title {
+        margin-bottom: 32px;
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .buy__right-contact {
+        margin-right: 40px;
+    }
+
+    .footer__top {
+        gap: 20px;
     }
 }
 
@@ -1412,6 +1640,82 @@ video {
         height: 389px;
     }
 
+    .technic__item {
+        justify-content: inherit;
+    }
+
+    .technic__item-desc {
+        width: 100%;
+    }
+
+    .technic__button {
+        width: 100%;
+    }
+
+    .guarantee__item {
+        max-width: 300px;
+    }
+
+    .send__inner {
+        width: 100%;
+    }
+
+    .send__image {
+        display: none;
+    }
+
+    .send__action {
+        display: flex;
+        width: 100%;
+        max-width: inherit;
+        gap: 20px;
+    }
+
+    .send__action-wrap {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .footer__top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__menu-inner {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+}
+
+
+
+@media (max-width: 730px) {
+    .buy__inner {
+        flex-direction: column;
+    }
+
+    .buy__left {
+        max-width: inherit;
+    }
+
+    .buy__image {
+        width: 100%;
+    }
+
+    .buy__image img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 718px) {
+    .guarantee__item {
+        width: 100%;
+        max-width: inherit;
+    }
 }
 
 @media (max-width: 706px) {
@@ -1457,72 +1761,210 @@ video {
         padding: 20px;
     }
 
+    .send {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .send__title {
+        margin-bottom: 40px;
+    }
+
+    .send__action {
+        flex-direction: column;
+        gap: 40px;
+    }
+
 }
 
 
-    @media (max-width: 600px) {
-        .hero__title {
-            font-size: 32px;
-        }
+@media (max-width: 600px) {
+    .hero__title {
+        font-size: 32px;
     }
 
-    @media (max-width: 500px) {
-        .header__nav-link {
-            font-size: 14px;
-        }
+    .wrapper .container {
+        padding: 80px 15px;
+    }
+}
 
-        .about__content-text::after {
-            width: 90px;
-            height: 63px;
-            top: 20%;
-            right: -30%;
-        }
+@media (max-width: 545px) {
+
+    .advantages {
+        margin-top: 80px;
     }
 
-    @media (max-width: 475px) {
-        .header__nav {
-            width: 100%;
-            left: 0;
-        }
-
-        .container {
-            padding: 0 15px;
-        }
-
-        .header .container {
-            padding: 40px 15px;
-        }
-
-        .hero__title {
-            font-size: 27px;
-            margin-bottom: 223px;
-        }
-
-        .hero__link {
-            width: 100%;
-        }
-
-        .about__content-text::after {
-            top: 0%;
-            right: -29%;
-        }
-
-        .about__content-frame {
-            height: 196px;
-        }
-
-        .wrapper .container {
-            padding: 80px 15px;
-        }
-
-        .equipment__title {
-            margin-bottom: 40px;
-        }
-
-        .additions {
-            margin-top: 40px;
-        }
+    .advantages__title {
+        margin-bottom: 40px;
     }
+
+    .advantages__name {
+        font-size: 16px;
+    }
+
+    .advantages__text {
+        font-size: 14px;
+    }
+
+    .advantages__item {
+        flex-direction: column;
+    }
+
+    .advantages__image {
+        width: 100%;
+        height: 140px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advantages__item-content {
+        width: 100%;
+        max-width: inherit;
+    }
+}
+
+@media (max-width: 583px) {
+    .buy {
+        padding-top: 80px;
+    }
+
+    .buy__title {
+        margin-bottom: 40px;
+    }
+
+    .buy__inner {
+        gap: 40px;
+    }
+
+    .buy__right-contact {
+        margin-bottom: 20px;
+    }
+
+    .buy__info-mobile {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .buy__right-tablet {
+        margin-top: 40px;
+        padding: 20px 15px ;
+    }
+}
+
+
+@media (max-width: 532px) {
+
+    .technic {
+        margin-top: 80px;
+    }
+
+    .technic__title {
+        margin-bottom: 40px;
+    }
+
+    .technic__image {
+        margin-bottom: 40px;
+    }
+
+    .technic__item {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .technic__item-name {
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .technic__item-desc {
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .technic__button {
+        padding: 16px 68px;
+        font-size: 14px;
+    }
+
+    .guarantee {
+        padding: 80px 0;
+    }
+
+    .questions-wrapper {
+        padding: 80px 0;
+    }
+
+    .wrapper .questions-wrapper {
+        padding: 80px 15px;
+    }
+
+    .questions__title {
+        margin-bottom: 40px;
+
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .header__nav-link {
+        font-size: 14px;
+    }
+
+    .about__content-text::after {
+        width: 90px;
+        height: 63px;
+        top: 20%;
+        right: -30%;
+    }
+}
+
+@media (max-width: 475px) {
+    .header__nav {
+        width: 100%;
+        left: 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .header .container {
+        padding: 40px 15px;
+    }
+
+    .hero__title {
+        font-size: 27px;
+        margin-bottom: 223px;
+    }
+
+    .hero__link {
+        width: 100%;
+    }
+
+    .about__content-text::after {
+        top: 0%;
+        right: -29%;
+    }
+
+    .about__content-frame {
+        height: 196px;
+    }
+
+    .wrapper .container {
+        padding: 80px 15px;
+    }
+
+    .equipment__title {
+        margin-bottom: 40px;
+    }
+
+    .additions {
+        margin-top: 40px;
+    }
+}
+
 }
 
 @media (max-width: 399px) {
