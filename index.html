@@ -671,9 +671,9 @@
                 </div>
             </div>
             <div class="buy__right-socials">
-                <div class="buy__right-socials-icon"><img src="images/whatsapp.png" alt="Вотсап"></div>
-                <div class="buy__right-socials-icon"><img src="images/telegram.png" alt="Телеграм"></div>
-                <div class="buy__right-socials-icon"><img src="images/youtube.png" alt="Ютуб"></div>
+                <div class="buy__right-socials-icon"><img src="images/whatsappb.svg" alt="Вотсап"></div>
+                <div class="buy__right-socials-icon"><img src="images/telegramb.svg" alt="Телеграм"></div>
+                <div class="buy__right-socials-icon"><img src="images/youtubeb.svg" alt="Ютуб"></div>
             </div>
         </div>
     </div>
@@ -720,14 +720,14 @@
                         </div>
                     </div>
                 </div>
-                <form action="" method="post" class="send__form">
+                <form action="sender.php" method="post" class="send__form">
                     <div class="send__form-item">
-                        <input placeholder="Имя" type="text" class="send__form-item-input">
+                        <input placeholder="Имя" name="name" type="text" class="send__form-item-input">
                     </div>
                     <div class="send__form-item">
-                        <input placeholder="Телефон" type="text" class="send__form-item-input">
+                        <input id="phone" placeholder="Телефон" name="phone" type="text" class="send__form-item-input">
                     </div>
-                    <button class="send__form-button button" type="submit">Оформить заявку</button>
+                    <button id="formButton" class="send__form-button button" type="submit">Оформить заявку</button>
                     <div class="send__form-policy">Нажимая на кнопку, вы соглашаетесь <br> с <a href="#">политикой
                         конфиденциальности</a></div>
                 </form>
@@ -740,7 +740,7 @@
     <div class="container">
         <div class="footer__top">
             <div class="footer__logo">
-                <div class="footer__logo-image"><img src="images/logofooter.png" alt="logo"></div>
+                <div class="footer__logo-image"><img src="images/logo.svg" alt="logo"></div>
                 <div class="footer__logo-text">Надувной аквабайк с универсальным электромотором</div>
             </div>
             <div class="footer__menu">
@@ -781,5 +781,6 @@
 </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/imask.js" ></script>
 <script src="js/script.js"></script>
 </html>
