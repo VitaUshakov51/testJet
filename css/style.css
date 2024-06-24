@@ -1,6 +1,9 @@
+* {
+    scroll-behavior: smooth;
+}
 
 html{
-    scroll-behavior: smooth;
+
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -841,7 +844,7 @@ a.button {
 }
 
 .buy__info-mobile {
-    display: block;
+    display: none;
 }
 
 .buy__right-tablet {
@@ -1686,6 +1689,12 @@ video {
     .footer__menu-inner {
         flex-direction: row;
         flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .footer__bottom {
+        flex-direction: column-reverse;
+        align-items: start;
         gap: 20px;
     }
 }
